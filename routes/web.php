@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UsersController;
+use App\Http\Controllers\HomeController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -11,8 +12,7 @@ use App\Http\Controllers\UsersController;
 | routes are loaded by the RouteServiceProvider within a group which
 | contains the "web" middleware group. Now create something great!
 |
-*/
+    */
+Route::get('/', [HomeController::class, 'index']);
+Route::resource('users', UsersController::class);
 
-Route::get('/', function () {
-    return view('welcome');
-});
