@@ -12,9 +12,19 @@ class UsersController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function login()
     {
-        //
+        return view('Login');
+    }
+
+    /**
+     * Display a listing of the resource.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function register()
+    {
+        return view('register');
     }
 
     /**
