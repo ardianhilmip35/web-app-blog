@@ -17,10 +17,10 @@
   <body>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
-    <nav class="navbar logres">
+    <nav class="navbar logres shadow">
         <div class="container">
           <a class="navbar-brand txlogo" href="#">
-            <img src="/docs/5.0/assets/brand/bootstrap-logo.svg" alt="" width="30" height="24" class="d-inline-block align-text-top">
+            <img src="/img/LOGO TOK.png" alt="" width="37" height="37" class="d-inline-block align-text-top me-1">
             Go Job
           </a>
         </div>
