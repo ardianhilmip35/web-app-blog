@@ -15,4 +15,5 @@ use App\Http\Controllers\HomeController;
     */
 
 Route::get('/', [UsersController::class, 'login']);
+Route::get('/register', [UsersController::class, 'register']);
 Route::resource('users', UsersController::class);
