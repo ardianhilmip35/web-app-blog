@@ -32,4 +32,28 @@ body {
     margin-top: 20px;
     max-width: 550px;
     max-height: 550px;
+    margin: auto;
+}
+
+#ckbox {
+    font-size: 14px;
+}
+
+#btnlogin {
+    background-color: #021668;
+    color: #fff;
+    border-radius: 20px;
+    width: 200px;
+}
+
+#forgotpassword {
+    font-size: 14px;
+}
+
+.form-check-label {
+    font-size: 14px;
+}
+
+#ckbox {
+   margin: auto;
 }
