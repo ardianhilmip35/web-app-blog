@@ -3,7 +3,7 @@
 @section('title', 'Login')
 @section('content')
 
-<div class="container ">
+<div class="container">
     <form class="row justify-content-center fmreg shadow" novalidate>
     <img id="logo" class="mb-4" 
             src="img/LOGO TOK.png" width="50" height="50">
