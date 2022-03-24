@@ -20,13 +20,13 @@
     <nav class="navbar logres shadow">
         <div class="container">
           <a class="navbar-brand txlogo" href="#">
-            <img src="/img/LOGO TOK.png" alt="" width="37" height="37" class="d-inline-block align-text-top me-1">
+            <img src="/img/LOGO TOK.png" alt="" width="34" height="34" class="d-inline-block align-text-top me-1">
             Go Job
           </a>
         </div>
       </nav>
 
-    <div class="container mt-4">
+    <div class="container mt-2 logreg mb-2">
         @yield('content')
     </div>
 
