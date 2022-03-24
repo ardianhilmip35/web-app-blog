@@ -23,3 +23,13 @@ body {
     text-decoration: none;
     font-family: "poppins", sans-serif;
 }
+
+.fmreg {
+    background-color: #fff;
+    border: 1px solid #021668;
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 20px;
+    max-width: 550px;
+    max-height: 550px;
+}
