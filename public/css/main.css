@@ -36,7 +36,7 @@ body {
     border: 1px solid #021668;
     border-radius: 5px;
     padding: 20px;
-    margin-top: 70px;
+    margin: 60px 0;
     min-width: 100px;
     min-height: 200px;
 }
@@ -55,25 +55,20 @@ body {
     margin: auto;
 }
 
-#ckbox {
+#terms{
     font-size: 14px;
+    font-family: "poppins", sans-serif;
+    color: #000;
+    text-decoration: none;
 }
 
-#btnlogin {
+.btnreglog{
+    min-width: 400px;
     background-color: #021668;
     color: #fff;
-    border-radius: 20px;
-    width: 200px;
+    font-family: "poppins", sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    border: none;
 }
 
-#forgotpassword {
-    font-size: 14px;
-}
-
-.form-check-label {
-    font-size: 14px;
-}
-
-#ckbox {
-   margin: auto;
-}
