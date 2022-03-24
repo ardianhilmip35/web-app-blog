@@ -34,7 +34,9 @@ class UsersController extends Controller
      */
     public function create()
     {
-        //
+        return view('petugas.create', [
+            'title' => 'Tambah Anggota',
+        ]);
     }
 
     /**
@@ -45,7 +47,8 @@ class UsersController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        Users::create($request->all());
+        return redirect('users')->with('msg', 'Data Berhasil Ditambahkan');
     }
 
     /**
