@@ -34,8 +34,8 @@ class UsersController extends Controller
      */
     public function create()
     {
-        return view('petugas.create', [
-            'title' => 'Tambah Anggota',
+        return view('users.create', [
+            'title' => 'Tambah User',
         ]);
     }
 
