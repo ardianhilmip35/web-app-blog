@@ -22,11 +22,11 @@
         </div>
 
         <div class="col-md-6 pe-5">
-                <a href="">Forgot Password!</a>
+                <a href="">Forgot Password?</a>
         </div>
         
 
-        <div class="col-md-12">
+        <div class="col-md-12 mt-3">
             <button class="btn btnreglog" type="submit">Login</button>
         </div>
     </form>
