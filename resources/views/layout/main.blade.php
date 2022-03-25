@@ -26,7 +26,7 @@
         </div>
       </nav>
 
-    <div class="container mt-2 logreg mb-2">
+    <div class="container mt-2 logreg mb-3">
         @yield('content')
     </div>
 
