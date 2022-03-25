@@ -17,3 +17,7 @@ use App\Http\Controllers\HomeController;
 Route::get('/', [UsersController::class, 'login']);
 Route::get('/register', [UsersController::class, 'register']);
 Route::resource('users', UsersController::class);
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
