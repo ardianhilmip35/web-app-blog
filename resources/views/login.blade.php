@@ -34,7 +34,7 @@
                 <label class="form-check-label" for="invalidCheck">
                     Don't have an account?
                 </label>
-                <a href="" style="ms-7">Register Now</a>
+                <a href="{{  }}" style="ms-7">Register Now</a>
             </div>
         </div>
     </form>
