@@ -34,8 +34,7 @@
                 <label class="form-check-label" for="invalidCheck">
                     Don't have an account?
                 </label>
-                <a href="{{  }}" style="ms-7">Register Now</a>
-            </div>
+                <a href="{{ route('register') }}">{{ __('Register') }}</a>
         </div>
     </form>
 @endsection
