@@ -2,32 +2,57 @@
 
 @section('title', 'Login')
 @section('content')
-    <form class="row justify-content-center fmreg shadow" novalidate>
+    <form class="row justify-content-center fmreg shadow" method="POST" action="{{ route('login') }}" novalidate>
+        @csrf
+
         <div class="col-md-8 text-center mb-4"> 
             <img class="mb-4 mt-3" src="/img/LOGO TOK.png" alt="" id="logoreglog">
             <p class="txtreg">Please Login Your Account</p>  
         </div> 
         <div class="col-md-12 mb-3">
-            <input type="text" class="form-control mb-4" id="validationCustom03" value="" placeholder="Email" required>
-            <input type="text" class="form-control" id="validationCustom03" value="" placeholder="Password" required>
+            <input id="email" type="text" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" placeholder="Masukkan Email" required autocomplete="email" autofocus>
+            
+            @error('email')
+                <span class="invalid-feedback" role="alert">
+                    <strong>{{ $message }}</strong>
+                </span>
+            @enderror
         </div>
 
-        <div class="col-md-7">
+        <div class="col-md-12 mb-3">
+            <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" placeholder="Masukkan Password" name="password" required autocomplete="current-password">
+        
+            @error('password')
+                <span class="invalid-feedback" role="alert">
+                    <strong>{{ $message }}</strong>
+                </span>
+            @enderror
+        </div>
+
+        <div class="col-md-7 ms-auto">
             <div class="form-check">
-                <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
-                <label class="form-check-label" for="invalidCheck">
-                    Remember Me
+                <input class="form-check-input" type="checkbox" name="remember" id="remember" {{ old('remember') ? 'checked' : '' }}>
+
+                <label class="form-check-label" for="remember">
+                    {{ __('Remember Me') }}
                 </label>
-                {{-- <a href="" style="ms-7">Forgot Password?</a> --}}
             </div>
         </div>
 
-        <div class="col-md-5 text-center">
-                <a href="">Forgot Password?</a>
+        <div class="col-md-5 me-auto">
+            <div>
+                @if (Route::has('password.request'))
+                    <a class="btn btn-link" href="{{ route('password.request') }}">
+                        {{ __('Forgot Password?') }}
+                    </a>
+                @endif
+            </div>
         </div>
 
         <div class="col-md-12 mt-3">
-            <button class="btn btnreglog" type="submit">Login</button>
+            <button type="submit" class="btn btnreglog">
+                {{ __('Login') }}
+            </button>
         </div>
 
         <div class="mt-2 mb-3 text-center">
