@@ -4,6 +4,8 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UsersController;
 use App\Http\Controllers\HomeController;
 use Illuminate\Support\Facades\Auth;
+use App\Http\Controllers\Auth\LoginController;
+use App\Http\Controllers\Auth\RegisterController;
 
 /*
 |--------------------------------------------------------------------------
@@ -16,8 +18,8 @@ use Illuminate\Support\Facades\Auth;
 |
     */
 
-Route::get('/', [UsersController::class, 'login']);
-Route::resource('users', UsersController::class);
+Route::resource('login', LoginController::class);
+Route::resource('register', RegisterController::class);
 
 Auth::routes();
 
