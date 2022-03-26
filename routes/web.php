@@ -3,6 +3,8 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UsersController;
 use App\Http\Controllers\HomeController;
+use Illuminate\Support\Facades\Auth;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -15,7 +17,6 @@ use App\Http\Controllers\HomeController;
     */
 
 Route::get('/', [UsersController::class, 'login']);
-Route::get('/register', [UsersController::class, 'register']);
 Route::resource('users', UsersController::class);
 
 Auth::routes();
